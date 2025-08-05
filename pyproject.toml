@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "chaseur-trade"
+version = "0.1.0"
+description = "Modular Crypto Market Making System"
+authors = ["Jorge Hunter <jgehunter@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "src" }]
+homepage = "https://github.com/jgehunter/chaseur-trade"
+repository = "https://github.com/jgehunter/chaseur-trade"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "^3.9.5"
+websockets = "^12.0"
+redis = "^5.0.6"
+questdb = "^2.0.0"  # Python client
+duckdb = "^1.0.0"
+polars = "^1.7.0"
+numpy = "^2.0.0"
+pandas = "^2.2.2"
+plotly = "^5.23.0"
+streamlit = "^1.37.1"
+python-dotenv = "^1.0.1"
+loguru = "^0.7.2"
+pydantic = "^2.8.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+black = "^24.4.2"
+isort = "^5.13.2"
+flake8 = "^7.1.1"
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.5.21"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
